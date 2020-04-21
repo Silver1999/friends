@@ -14,3 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'HomeController@index')->name('home');
+//Route::get('/alert', function (){
+//    return redirect()->route('home')->with('info','You can sign in');
+//});
+Route::get('/signup', 'AuthController@getSignUp')->name('auth.signup');
+Route::post('/signup', 'AuthController@postSignUp');
