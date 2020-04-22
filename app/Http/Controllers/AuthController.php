@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\User;
+use Auth;
 
 class AuthController extends Controller
 {
@@ -27,8 +28,49 @@ class AuthController extends Controller
                 'email'    => $request->input('email'),
                 'username' => $request->input('username'),
                 'password' => bcrypt($request->input('password')),
-            ]);
-            return redirect()->route('home')->with('info','Register is success, you can Sign in!');
+            ]
+        );
+        if (Auth::attempt(
+            $request->only(['email', 'password'])
+        )
+        ) {
+            return redirect()->route('home')->with(
+                'success',
+                'You are succesfule singin'
+            );
+        }
+
     }
+
+    public function getSignIn()
+    {
+        return view('auth.signin');
+    }
+
+    public function postSignIn(Request $request)
+    {
+        $this->validate(
+            $request,
+            [
+                'email'    => 'required|email|max:255',
+                'password' => 'required|min:6',
+            ]
+        );
+        if (!Auth::attempt(
+            $request->only(['email', 'password']),
+            $request->has('remember')
+        )
+        ) {
+            return redirect()->back()->with(
+                'info',
+                'Incorect email or password!'
+            );
+        }
+        return redirect()->route('home')->with(
+            'success',
+            'You are succesfule singin'
+        );
+    }
+
 
 }

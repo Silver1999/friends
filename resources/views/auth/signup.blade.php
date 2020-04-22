@@ -33,7 +33,7 @@
                     </div>
                     <div class="form-group"><label for="password">Email</label><input
                             class="form-control{{$errors->has('email') ? ' is-invalid':' '}}" type="email" id="email"
-                            name="email" placeholder="enter your email" value="{{Request::old('username') ?: ''}}"
+                            name="email" placeholder="enter your email" value="{{Request::old('email') ?: ''}}"
                             required>
                         @if($errors->has('email'))
                             <span class="help-block text-danger">
