@@ -1,7 +1,11 @@
 <style>
-    .fa, .fas:hover {
+    .fa, .fa-key:hover {
         color: yellow;
     }
+    .fa, .fa-user-plus:hover {
+        color: #2f8030;
+    }
+
 
     #formm {
         width: 80%;
@@ -43,14 +47,13 @@
                     <li>
                         <button class="btn btn-success" type="button">Go!</button>
                         <input class="form-control" placeholder="search something :)"  id="formm" type="text"></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link " href="#">Logout</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link " href="{{route('logout')}}">Logout <i class="fas fa-sign-out-alt"></i></a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link " href="#">Update
-                            profile</a></li>
+                            profile <i class="fas fa-user-edit"></i> </a></li>
                 @else
                     <li role="presentation"><a class="nav-link" href="{{route('auth.signin')}}">Login <i
                                 class="fas fa-key"></i>
-                    <li role="presentation"><a class="nav-link" href="{{route('auth.signup')}}">Register <img
-                                src="assets/img/tech/icons8-add_user_male.png"></a></li>
+                    <li role="presentation"><a class="nav-link" href="{{route('auth.signup')}}">Register <i class="fas fa-user-plus"></i> </a></li>
                 @endif
             </ul>
         </div>

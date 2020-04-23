@@ -1,13 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="403b2dff-c5cd-4688-801c-052d705e044d" name="Default Changelist" comment="" />
+    <list default="true" id="403b2dff-c5cd-4688-801c-052d705e044d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/social.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/social.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AuthController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/include/nav.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/include/nav.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" doNotAsk="true">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution>
       <executable />
@@ -20,6 +30,9 @@
         <option value="CSS File" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -139,6 +152,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/public/assets/img/tech" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -182,6 +196,8 @@
       <workItem from="1587392623253" duration="1407000" />
       <workItem from="1587407310217" duration="9000" />
       <workItem from="1587407373709" duration="12131000" />
+      <workItem from="1587562449906" duration="1380000" />
+      <workItem from="1587633224048" duration="550000" />
     </task>
     <servers />
   </component>
@@ -221,9 +237,10 @@
       <screen x="0" y="23" width="1440" height="811" />
     </state>
     <state x="473" y="269" key="SymfonyComponentCompositeDataDialog/0.23.1440.811@0.23.1440.811" timestamp="1587393200850" />
-    <state x="384" y="257" key="com.intellij.ide.util.TipDialog" timestamp="1587407373760">
-      <screen x="0" y="23" width="1440" height="808" />
+    <state x="384" y="255" key="com.intellij.ide.util.TipDialog" timestamp="1587633268051">
+      <screen x="0" y="23" width="1440" height="802" />
     </state>
+    <state x="384" y="255" key="com.intellij.ide.util.TipDialog/0.23.1440.802@0.23.1440.802" timestamp="1587633268051" />
     <state x="384" y="257" key="com.intellij.ide.util.TipDialog/0.23.1440.808@0.23.1440.808" timestamp="1587407373760" />
     <state x="376" y="165" width="687" height="519" key="find.popup" timestamp="1587555977672">
       <screen x="0" y="23" width="1440" height="812" />

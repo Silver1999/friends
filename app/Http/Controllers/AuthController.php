@@ -71,6 +71,10 @@ class AuthController extends Controller
             'You are succesfule singin'
         );
     }
+    public function  logout(){
+        Auth::logout();
+       return redirect()->route('home');
+    }
 
 
 }
