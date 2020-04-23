@@ -2,6 +2,7 @@
     .fa, .fa-key:hover {
         color: yellow;
     }
+
     .fa, .fa-user-plus:hover {
         color: #2f8030;
     }
@@ -14,6 +15,7 @@
     .btn-success {
         float: right;
     }
+
     @media (min-width: 992px) {
         .navbar-expand-lg .navbar-collapse {
             margin-top: 30px;
@@ -44,16 +46,22 @@
                     <li class="nav-item" role="presentation"><a class="nav-link" href="blog-post.html">List of
                             friends</a>
                     </li>
-                    <li>
-                        <button class="btn btn-success" type="button">Go!</button>
-                        <input class="form-control" placeholder="search something :)"  id="formm" type="text"></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link " href="{{route('logout')}}">Logout <i class="fas fa-sign-out-alt"></i></a></li>
+
+                    <form method="GET" action="{{route('search')}}">
+                        <li>
+                            <button class="btn btn-success" type="submit">Go!</button>
+                            <input class="form-control" placeholder="search something :)" id="formm" name="search" type="text">
+                        </li>
+                    </form>
+                    <li class="nav-item" role="presentation"><a class="nav-link " href="{{route('logout')}}">Logout <i
+                                class="fas fa-sign-out-alt"></i></a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link " href="#">Update
                             profile <i class="fas fa-user-edit"></i> </a></li>
                 @else
                     <li role="presentation"><a class="nav-link" href="{{route('auth.signin')}}">Login <i
                                 class="fas fa-key"></i>
-                    <li role="presentation"><a class="nav-link" href="{{route('auth.signup')}}">Register <i class="fas fa-user-plus"></i> </a></li>
+                    <li role="presentation"><a class="nav-link" href="{{route('auth.signup')}}">Register <i
+                                class="fas fa-user-plus"></i> </a></li>
                 @endif
             </ul>
         </div>

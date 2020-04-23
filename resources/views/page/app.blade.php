@@ -78,7 +78,7 @@
 @include('include.nav')
 @include('include.alerts')
 @yield('content')
-<div class="shadow-sm social-icons" data-aos="slide-down"><a href="#"><i class="icon ion-social-twitter" id="twit"></i></a><a href="#"><i class="icon ion-social-facebook" id="facebook"></i></a><a href="#"><i class="icon ion-social-snapchat" id="snap"></i></a><a href="#"><i class="icon ion-social-youtube" id="youtube"></i></a></div>
+@include('include.footer')
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>

@@ -22,3 +22,5 @@ Route::post('/signup', 'AuthController@postSignUp')->middleware('guest');
 Route::get('/signin', 'AuthController@getSignIn')->middleware('guest')->name('auth.signin');
 Route::post('/signin', 'AuthController@postSignIn')->middleware('guest');
 Route::get('/logout', 'AuthController@logout')->name('logout');
+
+Route::get('/search','SearchController@getResults')->name('search');

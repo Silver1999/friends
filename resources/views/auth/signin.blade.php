@@ -38,12 +38,4 @@
             </div>
         </section>
     </main>
-    <footer class="bg-white shadow page-footer dark">
-        <div class="container">
-            <div class="row"></div>
-        </div>
-        <div class="bg-primary footer-copyright">
-            <p class="lead text-white">© 2020 Copyright Text</p>
-        </div>
-    </footer>
 @endsection
