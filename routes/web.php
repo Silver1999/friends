@@ -17,10 +17,17 @@ Route::get('/', 'HomeController@index')->name('home');
 //Route::get('/alert', function (){
 //    return redirect()->route('home')->with('info','You can sign in');
 //});
-Route::get('/signup', 'AuthController@getSignUp')->middleware('guest')->name('auth.signup');
+Route::get('/signup', 'AuthController@getSignUp')->middleware('guest')->name(
+    'auth.signup'
+);
 Route::post('/signup', 'AuthController@postSignUp')->middleware('guest');
-Route::get('/signin', 'AuthController@getSignIn')->middleware('guest')->name('auth.signin');
+Route::get('/signin', 'AuthController@getSignIn')->middleware('guest')->name(
+    'auth.signin'
+);
 Route::post('/signin', 'AuthController@postSignIn')->middleware('guest');
 Route::get('/logout', 'AuthController@logout')->name('logout');
 
-Route::get('/search','SearchController@getResults')->name('search');
+Route::get('/search', 'SearchController@getResults')->name('search');
+Route::get('/username/{username}', 'ProfileController@getProfile')->name(
+    'profile'
+);

@@ -39,7 +39,7 @@
             <ul class="nav navbar-nav ml-auto">
                 @if(Auth::check())
                     <li class="nav-item" role="presentation"><a class="nav-link"
-                                                                href="blog-post-list.html">{{Auth::user()->getNameOrUsername()}}</a>
+                                                                href="{{route('profile', Auth::user()->username)}}">{{Auth::user()->getNameOrUsername()}}</a>
                     </li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="blog-post-list.html">Posts</a>
                     </li>
@@ -50,7 +50,8 @@
                     <form method="GET" action="{{route('search')}}">
                         <li>
                             <button class="btn btn-success" type="submit">Go!</button>
-                            <input class="form-control" placeholder="search something :)" id="formm" name="search" type="text">
+                            <input class="form-control" placeholder="search something :)" id="formm" name="search"
+                                   type="text">
                         </li>
                     </form>
                     <li class="nav-item" role="presentation"><a class="nav-link " href="{{route('logout')}}">Logout <i
